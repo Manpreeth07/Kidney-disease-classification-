@@ -77,3 +77,110 @@ x==========x]
 [2024-06-14 09:51:47,676: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-06-14 13:42:09,118: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 13:42:09,122: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 13:42:09,123: INFO: common: created directory at: artifacts]
+[2024-06-14 13:42:09,125: INFO: common: created directory at: artifacts/training]
+[2024-06-14 14:04:33,083: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 14:04:33,084: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:04:33,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:04:33,085: INFO: common: created directory at: artifacts]
+[2024-06-14 14:04:33,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 14:04:33,085: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:04:39,508: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:04:39,909: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 14:04:39,910: INFO: main: *******************]
+[2024-06-14 14:04:39,910: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 14:04:39,911: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:04:39,912: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:04:39,912: INFO: common: created directory at: artifacts]
+[2024-06-14 14:04:39,912: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 14:04:40,245: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 14:04:40,310: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:04:40,312: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:04:40,357: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 14:04:40,358: INFO: main: *******************]
+[2024-06-14 14:04:40,358: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 14:04:40,359: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:04:40,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:04:40,360: INFO: common: created directory at: artifacts]
+[2024-06-14 14:04:40,360: ERROR: main: 'function' object has no attribute 'updated_base_model_path']
+Traceback (most recent call last):
+  File "/Users/manu/Desktop/Kidney-disease-classification-/main.py", line 34, in <module>
+    obj.main()
+  File "/Users/manu/Desktop/Kidney-disease-classification-/src/cnnClassifier/pipeline/stage_03_model_training.py", line 16, in main
+    training.get_base_model()
+  File "/Users/manu/Desktop/Kidney-disease-classification-/src/cnnClassifier/components/model_training.py", line 15, in get_base_model
+    self.model = tf.keras.models.load_model(self.config.updated_base_model_path)
+AttributeError: 'function' object has no attribute 'updated_base_model_path'
+[2024-06-14 14:06:40,265: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 14:06:40,266: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:06:40,266: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:06:40,267: INFO: common: created directory at: artifacts]
+[2024-06-14 14:06:40,267: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 14:06:40,267: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:06:46,680: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:06:47,053: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 14:06:47,053: INFO: main: *******************]
+[2024-06-14 14:06:47,053: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 14:06:47,055: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:06:47,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:06:47,056: INFO: common: created directory at: artifacts]
+[2024-06-14 14:06:47,056: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 14:06:47,354: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 14:06:47,421: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:06:47,423: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:06:47,463: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 14:06:47,464: INFO: main: *******************]
+[2024-06-14 14:06:47,464: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 14:06:47,465: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:06:47,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:06:47,466: INFO: common: created directory at: artifacts]
+[2024-06-14 14:06:47,466: ERROR: main: 'function' object has no attribute 'updated_base_model_path']
+Traceback (most recent call last):
+  File "/Users/manu/Desktop/Kidney-disease-classification-/main.py", line 34, in <module>
+    model_trainer.main()
+  File "/Users/manu/Desktop/Kidney-disease-classification-/src/cnnClassifier/pipeline/stage_03_model_training.py", line 16, in main
+    training.get_base_model()
+  File "/Users/manu/Desktop/Kidney-disease-classification-/src/cnnClassifier/components/model_training.py", line 15, in get_base_model
+    self.model = tf.keras.models.load_model(self.config.updated_base_model_path)
+AttributeError: 'function' object has no attribute 'updated_base_model_path'
+[2024-06-14 14:09:35,119: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-14 14:09:35,120: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:09:35,121: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:09:35,121: INFO: common: created directory at: artifacts]
+[2024-06-14 14:09:35,121: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-14 14:09:35,121: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:09:41,509: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-14 14:09:41,877: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-14 14:09:41,877: INFO: main: *******************]
+[2024-06-14 14:09:41,877: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-14 14:09:41,878: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:09:41,879: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:09:41,879: INFO: common: created directory at: artifacts]
+[2024-06-14 14:09:41,879: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-14 14:09:42,183: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-14 14:09:42,250: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:09:42,252: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2024-06-14 14:09:42,297: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-14 14:09:42,297: INFO: main: *******************]
+[2024-06-14 14:09:42,297: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-06-14 14:09:42,298: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-06-14 14:09:42,299: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-14 14:09:42,299: INFO: common: created directory at: artifacts]
+[2024-06-14 14:09:42,299: INFO: common: created directory at: artifacts/training]
+[2024-06-14 14:10:25,498: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
