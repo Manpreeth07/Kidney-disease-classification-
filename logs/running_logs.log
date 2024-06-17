@@ -409,3 +409,9 @@ x==========x]
 [2024-06-17 17:03:31,341: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2024-06-17 17:03:38,705: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:38] "GET / HTTP/1.1" 200 -]
 [2024-06-17 17:03:41,201: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:41] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:14:36,294: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.25:8080]
+[2024-06-17 17:14:36,294: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-17 17:14:38,376: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:14:38] "GET / HTTP/1.1" 200 -]
