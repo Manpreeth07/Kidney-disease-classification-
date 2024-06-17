@@ -387,3 +387,25 @@ x==========x]
 [2024-06-17 16:41:29,598: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-06-17 17:00:21,998: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.25:8080]
+[2024-06-17 17:00:21,998: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-17 17:00:27,739: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:00:27] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:01,090: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:01] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:02,579: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:02] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:03,075: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:03] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:03,277: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:03] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:03,828: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:03] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:04,133: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:04] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:04,347: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:04] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:04,696: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:04] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:04,999: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:04] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:31,341: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.178.25:8080]
+[2024-06-17 17:03:31,341: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-06-17 17:03:38,705: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:38] "GET / HTTP/1.1" 200 -]
+[2024-06-17 17:03:41,201: INFO: _internal: 127.0.0.1 - - [17/Jun/2024 17:03:41] "GET / HTTP/1.1" 200 -]
